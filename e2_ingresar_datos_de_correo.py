@@ -9,14 +9,14 @@ driver.get("https://gmail.com")
 
 usuario = driver.find_element_by_id("identifierId")
 
-usuario.send_keys("95betty90@gmail.com")
+usuario.send_keys("Samurainomichi.kendodojo@gmail.com")
 
 usuario.send_keys(Keys.ENTER)
 time.sleep(3)
 
 clave = driver.find_element_by_name("password")
 
-clave.send_keys("anime9592")
+clave.send_keys("Sam@sys2")
 clave.send_keys(Keys.ENTER)
 
 
