@@ -6,11 +6,12 @@ import time
 class usando_unittest(unittest.TestCase):
     def setUp(self):
         self.driver= webdriver.Chrome(executable_path=r"C:\dchrome\chromedriver.exe")
+        #driver = webdriver.Edge(executable_path=r"C:\dedge\msedgedriver.exe")
     def test_buscar(self):
         driver= self.driver
         driver.get('http://www.google.com')
         self.assertIn('Google',driver.title)
-        elemento = driver.find_element_by_name('q')
+        elemento = driver.find_element_by_name('q')#Buscando elemento por nombre
         elemento.send_keys('selenium')
         elemento.send_keys(Keys.RETURN)
         time.sleep(5)
